@@ -11,3 +11,5 @@ dateForm.addEventListener('submit', e => {
     const dateInput = document.getElementById("date-input")
     const timeInput = document.getElementById("time-input")
     const eventDate = Date.parse(dateInput.value + "" + timeInput.value)
+
+    window.eventCountdown && clearInterval(window.eventCountdown)
