@@ -7,3 +7,7 @@ const countDown = document.getElementById("countdown-box");
 dateForm.addEventListener('submit', e => {
 
     e.preventDefault()
+
+    const dateInput = document.getElementById("date-input")
+    const timeInput = document.getElementById("time-input")
+    const eventDate = Date.parse(dateInput.value + "" + timeInput.value)
