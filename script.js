@@ -30,3 +30,9 @@ dateForm.addEventListener('submit', e => {
         const s = Math.floor((eventDate / secondsDivider - now / secondsDivider) % 60)
 
         const diff = eventDate - now 
+
+        if (diff > 0) {
+            countdownBox.innerHTML = `${d} days, ${h} hours, ${m} minutes, ${s} seconds`
+        } else {
+            countdownBox.innerHTML = "<br>Countdown completed</br>"
+        }
