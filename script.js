@@ -36,3 +36,8 @@ dateForm.addEventListener('submit', e => {
         } else {
             countdownBox.innerHTML = "<br>Countdown completed</br>"
         }
+
+    }, 1000)
+
+
+})
