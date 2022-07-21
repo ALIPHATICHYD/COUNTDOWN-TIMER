@@ -17,3 +17,9 @@ dateForm.addEventListener('submit', e => {
     const eventCountdown = setInterval(()=> {
         window.eventCountdown = eventCountdown
         const now = new Date().getTime()
+
+        // MATHEMATICAL WORKINGS
+        const daysDivider = 1000 * 60 * 60 * 24
+        const hoursDivider = 1000 * 60 * 60 
+        const minutesDivider = 1000 * 60
+        const secondsDivider = 1000
