@@ -23,3 +23,8 @@ dateForm.addEventListener('submit', e => {
         const hoursDivider = 1000 * 60 * 60 
         const minutesDivider = 1000 * 60
         const secondsDivider = 1000
+
+        const d = Math.floor(eventDate / daysDivider - now / daysDivider)
+        const h = Math.floor((eventDate / hoursDivider - now / hoursDivider) % 24)
+        const m = Math.floor((eventDate / minutesDivider - now / minutesDivider) % 60)
+        const s = Math.floor((eventDate / secondsDivider - now / secondsDivider) % 60)
