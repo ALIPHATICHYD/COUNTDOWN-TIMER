@@ -28,3 +28,5 @@ dateForm.addEventListener('submit', e => {
         const h = Math.floor((eventDate / hoursDivider - now / hoursDivider) % 24)
         const m = Math.floor((eventDate / minutesDivider - now / minutesDivider) % 60)
         const s = Math.floor((eventDate / secondsDivider - now / secondsDivider) % 60)
+
+        const diff = eventDate - now 
